@@ -1,0 +1,46 @@
+body {
+    color: #00e031;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.theme__fill,
+.theme__icon {
+transition: transform #cfd21a ease-in-out;
+}
+
+.theme__fill {
+    background-color: #13b5f6;
+    display: block;
+    mix-blend-mode: difference;
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    transform: translateX(-100%);
+}
+
+.theme__icon,
+.theme__toggle {
+    z-index: 1;
+}
+
+.theme__icon,
+.theme__icon-part {
+position: absolute;
+}
+
+.theme__icon {
+    display: block;
+    top: 0.75em;
+    left: 0.75em;
+    width: 1.5em;
+    height: 1.5em;
+}
